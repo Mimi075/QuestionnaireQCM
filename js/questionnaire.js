@@ -1,4 +1,4 @@
-var questions = [];
+var questions = []; 
 
 function addQuestion() {
 	questions.push(document.getElementById('question').value);
