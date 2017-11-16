@@ -1,23 +1,33 @@
 * [class*=row] {
-	/*border: 1px solid red;*/
 }
+
 * [class*=col] {
-	/* border: 1px solid red; */
 }
 
 h5 {
-	margin-top: 20px;
-	text-align: center;
-	text-decoration: underline;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: underline;
 }
+
+p {
+    width: 80vh!important;
+}
+
 .form-group {
-	margin-top: 20px;
-	width: 50%;
+    width: 50%;
+    margin-top: 20px;
 }
-.form-control{
-	width: 80vh!important;
+
+.form-control {
+    width: 80vh!important;
 }
-.btn{
-	display: block;
-	margin: auto;
+
+.btn {
+    display: block;
+    margin: auto;
+}
+
+#resultat {
+    text-align: center;
 }

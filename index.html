@@ -17,7 +17,8 @@
 						<div class="form-group row">
 							<label for="inputEmail3" class="col-sm-2 col-form-label"></label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="inputEmail3" placeholder="Quelle est la couleur du cheval blanc d'Henry IV ?">
+								<!-- <input type="text" class="form-control" id="inputEmail3" placeholder="Quelle est la couleur du cheval blanc d'Henry IV ?"> -->
+								<p>Quelle est la couleur du cheval blanc d'Henry IV ?</p>
 							</div>
 						</div>
 					
@@ -27,19 +28,19 @@
 								<div class="col-sm-10">
 									<div class="form-check">
 										<label class="form-check-label">
-											<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+											<input class="form-check-input" type="radio" name="gridRadios" id="blanc" value="option1" checked>
 											Blanc
 										</label>
 									</div>
 									<div class="form-check">
 										<label class="form-check-label">
-											<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+											<input class="form-check-input" type="radio" name="gridRadios" id="rouge" value="option2">
 											Rouge
 										</label>
 									</div>
 									<div class="form-check">
 										<label class="form-check-label">
-											<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+											<input class="form-check-input" type="radio" name="gridRadios" id="vert" value="option2">
 											Vert
 										</label>
 									</div>
@@ -48,16 +49,15 @@
 						</fieldset>
 						<div class="form-group row">
 							<div class="col-sm-10">
-								<button type="submit" class="btn btn-primary">Valider</button>
+								<button onclick="reponse()" class="btn btn-primary">Valider</button>
 							</div>
 						</div>
 					</form>
+					<p id="resultat"></p>
 				</div>
 			</div>
 		</div>
-		
-		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
 		<script src="js/questionnaire.js"></script>
 		
 	</body>
