@@ -5,12 +5,12 @@ function reponse() {
     
     var resultat = document.getElementById("resultat")
     if(blanc==true) {
-   	resultat.innerHTML = "La réponse est blanc";
+   	resultat.innerHTML = "Bonne réponse, vous avez répondu blanc";
     }
     else if(rouge==true) {
-   	resultat.innerHTML = "La réponse est rouge";
+   	resultat.innerHTML = "La réponse est fausse, vous avez répondu rouge ";
     }
     else {
-   	resultat.innerHTML = "La réponse est vert";
+   	resultat.innerHTML = "La réponse est fausse, vous avez répondu vert";
     }
 }
