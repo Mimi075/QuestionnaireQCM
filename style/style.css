@@ -1,10 +1,4 @@
-* [class*=row] {
-}
-
-* [class*=col] {
-}
-
-h5 {
+#titre {
     margin-top: 20px;
     text-align: center;
     text-decoration: underline;
@@ -30,4 +24,7 @@ p {
 
 #resultat {
     text-align: center;
+}
+#question {
+	margin-top: 20px;
 }

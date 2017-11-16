@@ -10,53 +10,64 @@
 		<div class="container">
 			<div class="row justify-content-md-center">
 				<div class="col-md-auto">
-					
-					
-					<h5>Questionnaire de satisfaction</h5>
-					
-						<div class="form-group row">
-							<label for="inputEmail3" class="col-sm-2 col-form-label"></label>
-							<div class="col-sm-10">
-								<p>Quelle est la couleur du cheval blanc d'Henry IV ?</p>
-							</div>
+					<h5 id="titre">Questionnaire de satisfaction</h5>
+					<div class="form-group row">
+						<label for="inputEmail3" class="col-sm-2 col-form-label"></label>
+						<div class="col-sm-10">
+							<p>Quelle est la couleur du cheval blanc d'Henry IV ?</p>
 						</div>
-					
-						<fieldset class="form-group">
-							<div class="row">
-								<legend class="col-form-legend col-sm-2"></legend>
-								<div class="col-sm-10">
-									<div class="form-check">
-										<label class="form-check-label">
-											<input class="form-check-input" type="radio" name="gridRadios" id="blanc" value="option1" checked>
-											Blanc
-										</label>
-									</div>
-									<div class="form-check">
-										<label class="form-check-label">
-											<input class="form-check-input" type="radio" name="gridRadios" id="rouge" value="option2">
-											Rouge
-										</label>
-									</div>
-									<div class="form-check">
-										<label class="form-check-label">
-											<input class="form-check-input" type="radio" name="gridRadios" id="vert" value="option2">
-											Vert
-										</label>
-									</div>
+					</div>
+					<fieldset class="form-group">
+						<div class="row">
+							<legend class="col-form-legend col-sm-2"></legend>
+							<div class="col-sm-10">
+								<div class="form-check">
+									<label class="form-check-label">
+										<input class="form-check-input" type="radio" name="gridRadios" id="blanc" value="option1" checked>
+										Blanc
+									</label>
+								</div>
+								<div class="form-check">
+									<label class="form-check-label">
+										<input class="form-check-input" type="radio" name="gridRadios" id="rouge" value="option2">
+										Rouge
+									</label>
+								</div>
+								<div class="form-check">
+									<label class="form-check-label">
+										<input class="form-check-input" type="radio" name="gridRadios" id="vert" value="option2">
+										Vert
+									</label>
 								</div>
 							</div>
-						</fieldset>
-						<div class="form-group row">
-							<div class="col-sm-10">
-								<button onclick="reponse()" class="btn btn-primary">Valider</button>
-							</div>
 						</div>
-					
-					<p id="resultat"></p>
+					</fieldset>
+					<div class="form-group row">
+						<div class="col-sm-10">
+							<button onclick="reponse()" class="btn btn-primary">Valider</button>
+						</div>
+					</div>
+					<p id="resultat"></p><br>
+					<div>
+						<div class="col-sm-10">Posez votre question :</div>
+						<input  id="question" type="text" name="question"><br><br>
+						<label class="mr-sm-2" for="inlineFormCustomSelect">Preference</label>
+						<select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
+							<option selected>Choose...</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+						<label class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+							<input type="checkbox" class="custom-control-input">
+							<span class="custom-control-indicator"></span>
+							<span class="custom-control-description">Remember my preference</span>
+						</label>
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</div>
 				</div>
 			</div>
 		</div>
-
 		<script src="js/questionnaire.js"></script>
 		
 	</body>
