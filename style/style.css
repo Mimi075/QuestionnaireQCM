@@ -1,0 +1,19 @@
+* [class*=row] {
+	/*border: 1px solid red;*/
+}
+* [class*=col] {
+	border: 1px solid red;
+}
+
+h5 {
+	margin-top: 20px;
+	text-align: center;
+	text-decoration: underline;
+}
+.form-group {
+	margin-top: 20px;
+	width: 50%;
+}
+#inputEmail3 {
+	width: 100%!important;
+}
