@@ -2,7 +2,7 @@
 	/*border: 1px solid red;*/
 }
 * [class*=col] {
-	border: 1px solid red;
+	/* border: 1px solid red; */
 }
 
 h5 {
@@ -14,6 +14,10 @@ h5 {
 	margin-top: 20px;
 	width: 50%;
 }
-#inputEmail3 {
-	width: 100%!important;
+.form-control{
+	width: 80vh!important;
+}
+.btn{
+	display: block;
+	margin: auto;
 }
