@@ -2,15 +2,19 @@ function reponse() {
     var blanc = document.getElementById('blanc').checked;
     var rouge = document.getElementById('rouge').checked;
     var vert = document.getElementById('vert').checked;
-    
-    var resultat = document.getElementById("resultat")
-    if(blanc==true) {
-   	resultat.innerHTML = "Bonne réponse, vous avez répondu blanc";
+    var resultat = document.getElementById("resultat");
+
+    switch (true) {
+    	case blanc:
+    		resultat.innerHTML = "Bonne réponse, vous avez répondu blanc";
+    		break;
+    	case rouge:
+    		resultat.innerHTML = "Mauvaise réponse, vous avez répondu rouge";
+    		break;
+    	case vert:
+    		resultat.innerHTML = "Mauvaise réponse, vous avez répondu vert";
+    		break;
+    	default:
+    		// statements_def
+    		break;
     }
-    else if(rouge==true) {
-   	resultat.innerHTML = "La réponse est fausse, vous avez répondu rouge ";
-    }
-    else {
-   	resultat.innerHTML = "La réponse est fausse, vous avez répondu vert";
-    }
-}
