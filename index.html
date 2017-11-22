@@ -1,8 +1,8 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="fr">
 	<head>
 		<meta charset="UTF-8">
-		<title>Questionnaire de satisfaction</title>
+		<title>Générateur de questions</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 		<link rel="stylesheet" href="style/style.css">
 	</head>
@@ -10,9 +10,7 @@
 		<div class="container">
 			<div class="row justify-content-md-center">
 				<div class="col-md-auto">
-					
-					
-					<h5>Questionnaire de satisfaction</h5>
+					<h5>Générateur de questions</h5>
 					
 					<div class="form-group row">
 						<label for="question" class="col-sm-2 col-form-label"></label>
@@ -20,20 +18,15 @@
 							<input type="text" class="form-control" id="question" placeholder="Votre question">
 						</div>
 					</div>
-					
-					
+					<div class="form-group row">
+						<div class="col-sm-10">
+							<button id="ajoutQuestionBtn" class="btn btn-primary">Valider</button>
+						</div>
+					</div>
+					<ul id="questionList"></ul>
 				</div>
-			</fieldset>
-			<div class="form-group row">
-				<div class="col-sm-10">
-					<button id="ajoutQuestionBtn" class="btn btn-primary">Valider</button>
-				</div>
-			</div>
-			
-			<ul id="questionList"></p>
 		</div>
 	</div>
-</div>
 <script src="js/questionnaire.js"></script>
 </body>
 </html>

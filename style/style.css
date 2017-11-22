@@ -1,13 +1,14 @@
-* [class*=row] {
+/* * [class*=row] {
+    border: 1px solid red;
 }
 
 * [class*=col] {
-}
+    border: 1px solid red;
+} */
 
 h5 {
     margin-top: 20px;
     text-align: center;
-    text-decoration: underline;
 }
 
 p {
@@ -22,12 +23,19 @@ p {
 .form-control {
     width: 80vh!important;
 }
-
+.form-group input[type="text"] {
+    margin-left: -42px !important;
+}
 .btn {
     display: block;
-    margin: auto;
+}
+label {
+    padding: 10px;
+}
+#questionList {
+    text-align:left;
 }
 
-#resultat {
-    text-align: center;
+ul {
+    list-style-type: none;
 }
