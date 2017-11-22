@@ -2,7 +2,7 @@
 <html lang="fr">
 	<head>
 		<meta charset="UTF-8">
-		<title>Questionnaire de satisfaction</title>
+		<title>Générateur de questions</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 		<link rel="stylesheet" href="style/style.css">
 	</head>
@@ -10,54 +10,23 @@
 		<div class="container">
 			<div class="row justify-content-md-center">
 				<div class="col-md-auto">
+					<h5>Générateur de questions</h5>
 					
-					
-					<h5>Questionnaire de satisfaction</h5>
-					
-						<div class="form-group row">
-							<label for="inputEmail3" class="col-sm-2 col-form-label"></label>
-							<div class="col-sm-10">
-								<p>Quelle est la couleur du cheval blanc d'Henry IV ?</p>
-							</div>
+					<div class="form-group row">
+						<label for="question" class="col-sm-2 col-form-label"></label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="question" placeholder="Votre question">
 						</div>
-					
-						<fieldset class="form-group">
-							<div class="row">
-								<legend class="col-form-legend col-sm-2"></legend>
-								<div class="col-sm-10">
-									<div class="form-check">
-										<label class="form-check-label">
-											<input class="form-check-input" type="radio" name="gridRadios" id="blanc" value="option1" checked>
-											Blanc
-										</label>
-									</div>
-									<div class="form-check">
-										<label class="form-check-label">
-											<input class="form-check-input" type="radio" name="gridRadios" id="rouge" value="option2">
-											Rouge
-										</label>
-									</div>
-									<div class="form-check">
-										<label class="form-check-label">
-											<input class="form-check-input" type="radio" name="gridRadios" id="vert" value="option2">
-											Vert
-										</label>
-									</div>
-								</div>
-							</div>
-						</fieldset>
-						<div class="form-group row">
-							<div class="col-sm-10">
-								<button onclick="reponse()" class="btn btn-primary">Valider</button>
-							</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-10">
+							<button id="ajoutQuestionBtn" class="btn btn-primary">Valider</button>
 						</div>
-					
-					<p id="resultat"></p>
+					</div>
+					<ul id="questionList"></ul>
 				</div>
-			</div>
 		</div>
-
-		<script src="js/questionnaire.js"></script>
-		
-	</body>
+	</div>
+<script src="js/questionnaire.js"></script>
+</body>
 </html>

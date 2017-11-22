@@ -1,13 +1,14 @@
-* [class*=row] {
+/* * [class*=row] {
+    border: 1px solid red;
 }
 
 * [class*=col] {
-}
+    border: 1px solid red;
+} */
 
 h5 {
     margin-top: 20px;
     text-align: center;
-    text-decoration: underline;
 }
 
 p {
@@ -22,12 +23,21 @@ p {
 .form-control {
     width: 80vh!important;
 }
-
+.form-group input[type="text"] {
+    margin-left: -42px !important;
+}
 .btn {
     display: block;
-    margin: auto;
 }
-
-#resultat {
-    text-align: center;
+label {
+    padding: 10px;
+}
+input[type="checkbox"]:last-child {
+    margin-top: -10px !important;
+}
+#questionList {
+    text-align:left;
+}
+ul {
+    list-style-type: none;
 }
