@@ -32,10 +32,12 @@ p {
 label {
     padding: 10px;
 }
+input[type="checkbox"]:last-child {
+    margin-top: -10px !important;
+}
 #questionList {
     text-align:left;
 }
-
 ul {
     list-style-type: none;
 }
